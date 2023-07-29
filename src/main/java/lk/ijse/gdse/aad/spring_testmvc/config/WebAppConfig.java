@@ -9,6 +9,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan(basePackageClasses = WebAppInitializer.class)
 public class WebAppConfig {
+
     public WebAppConfig(){
         System.out.println("Hello spring");
     }
