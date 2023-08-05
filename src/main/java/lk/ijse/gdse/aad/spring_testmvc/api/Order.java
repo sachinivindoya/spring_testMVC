@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class Order {
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
     public String saveOrderJSON(){
         return "save order JSON";
     }
 
-    @PostMapping(consumes = MediaType.APPLICATION_XML_VALUE)
+    @PostMapping(consumes = MediaType.APPLICATION_XML_VALUE,produces = MediaType.APPLICATION_XML_VALUE )
     public String saveOrderXML(){
         return "Saved order XML";
     }
